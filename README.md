@@ -1,22 +1,35 @@
-Text Summarizer using T5 (FastAPI + Hugging Face)
-Overview
+# Text Summarizer using T5 (FastAPI + Hugging Face)
 
-This project implements an abstractive text summarization system using the T5 transformer model.
-It includes a backend API built with FastAPI and a dataset-driven workflow for experimentation and evaluation.
+## Overview
 
-Tech Stack
-Python
-FastAPI
-Hugging Face Transformers (T5)
-Jupyter Notebook
-HTML
-Features
-Abstractive summarization using transformer-based models
-REST API for generating summaries
-Custom dataset integration (train, validation, test)
-End-to-end pipeline: preprocessing → model → summary generation
-Interactive frontend for testing
-Project Structure
+This project implements an **abstractive text summarization system** using the **T5 transformer model**.
+It includes a FastAPI backend and a dataset-driven workflow for experimentation and evaluation.
+
+---
+
+## Tech Stack
+
+* Python
+* FastAPI
+* Hugging Face Transformers (T5)
+* Jupyter Notebook
+* HTML
+
+---
+
+## Features
+
+* Abstractive summarization using transformer-based models
+* REST API for generating summaries
+* Custom dataset integration (train, validation, test)
+* End-to-end pipeline: preprocessing → model → summary generation
+* Interactive frontend for testing
+
+---
+
+## Project Structure
+
+```
 Text-Summarizer/
 │── app.py
 │── index.html
@@ -27,34 +40,73 @@ Text-Summarizer/
 │   ├── samsum-train.csv
 │   ├── samsum-validation.csv
 │   └── samsum-test.csv
-Dataset
+```
 
-This project uses the SAMSum dataset for dialogue summarization:
+---
 
-Train, validation, and test splits are included in the data/ folder
-Used for experimentation and model evaluation
-How to Run
-Clone the repository
+## Dataset
+
+This project uses the **SAMSum dataset** for dialogue summarization.
+
+* Train, validation, and test splits are included in the `data/` folder
+* Used for experimentation and model evaluation
+
+---
+
+## How to Run
+
+1. Clone the repository
+
+```
 git clone <your-repo-link>
 cd text-summarizer
-Install dependencies
+```
+
+2. Install dependencies
+
+```
 pip install -r requirements.txt
-Run the FastAPI server
+```
+
+3. Run the FastAPI server
+
+```
 python app.py
-Open in browser
-http://127.0.0.1:8000
-Notebook
+```
 
-The text_summarizer.ipynb includes:
+---
 
-Data preprocessing
-Model loading (T5)
-Summarization experiments
-Sample outputs
-Model
-Uses pretrained T5 model from Hugging Face
-Model weights are not stored in the repository due to size constraints
-Notes
-This project is designed for local execution
-Dataset is included for experimentation
-Model is loaded dynamically using Hugging Face
+## Notebook
+
+The `text_summarizer.ipynb` includes:
+
+* Data preprocessing
+* Model loading (T5)
+* Summarization experiments
+* Sample outputs
+
+---
+
+## Model
+
+* Uses pretrained **T5 model** from Hugging Face
+* Model weights are not included due to size constraints
+
+---
+
+## Notes
+
+* This project is designed for **local execution**
+* Dataset is included for experimentation
+* Model is loaded dynamically using Hugging Face
+
+---
+
+## Future Improvements
+
+* Fine-tuning T5 on SAMSum dataset
+* Adding evaluation metrics (ROUGE score)
+* Deployment as a web service
+* UI improvements
+
+---

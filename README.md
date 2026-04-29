@@ -101,12 +101,3 @@ The `text_summarizer.ipynb` includes:
 * Model is loaded dynamically using Hugging Face
 
 ---
-
-## Future Improvements
-
-* Fine-tuning T5 on SAMSum dataset
-* Adding evaluation metrics (ROUGE score)
-* Deployment as a web service
-* UI improvements
-
----
